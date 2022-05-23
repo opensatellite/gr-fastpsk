@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<block>
+  <name>BERT Source</name>
+  <key>fastpsk_bert_source</key>
+  <category>[fastpsk]</category>
+  <import>import fastpsk</import>
+  <make>fastpsk.bert_source($order)</make>
+  <param>
+    <name>Order</name>
+    <key>order</key>
+    <value>7</value>
+    <type>int</type>
+    <option>
+        <name>PN7</name>
+        <key>7</key>
+    </option>
+    <option>
+        <name>PN9</name>
+        <key>9</key>
+    </option>
+    <option>
+        <name>PN11</name>
+        <key>11</key>
+    </option>
+    <option>
+        <name>PN15</name>
+        <key>15</key>
+    </option>
+    <option>
+        <name>PN20</name>
+        <key>20</key>
+    </option>
+  </param>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>

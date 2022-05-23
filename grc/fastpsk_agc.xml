@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<block>
+  <name>Fast AGC</name>
+  <key>fastpsk_agc</key>
+  <category>[fastpsk]</category>
+  <import>import fastpsk</import>
+  <make>fastpsk.agc($n, $ref, $rate, $max_gain)</make>
+  <param>
+    <name>N</name>
+    <key>n</key>
+    <value>16</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Ref</name>
+    <key>ref</key>
+    <value>8192</value>
+    <type>real</type>
+  </param>
+  <param>
+    <name>Rate</name>
+    <key>rate</key>
+    <value>1e-5</value>
+    <type>real</type>
+  </param>
+  <param>
+    <name>Max gain</name>
+    <key>max_gain</key>
+    <value>65536</value>
+    <type>real</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>sc16</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>sc16</type>
+  </source>
+</block>

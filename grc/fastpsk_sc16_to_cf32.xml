@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<block>
+  <name>sc16 to cf32</name>
+  <key>fastpsk_sc16_to_cf32</key>
+  <category>[fastpsk]</category>
+  <import>import fastpsk</import>
+  <make>fastpsk.sc16_to_cf32($scale)</make>
+  <param>
+    <name>Scale</name>
+    <key>scale</key>
+    <value>8192</value>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>sc16</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>

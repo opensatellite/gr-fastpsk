@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<block>
+  <name>Deambiguity CC</name>
+  <key>fastpsk_deambiguity_cc</key>
+  <category>[fastpsk]</category>
+  <import>import fastpsk</import>
+  <make>fastpsk.deambiguity_cc($npsk, $swap, $diff)</make>
+	<callback>set_phase($phase)</callback>
+	<callback>set_swap($swap)</callback>
+  <param>
+    <name>NPSK</name>
+    <key>npsk</key>
+    <value>2</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Phase</name>
+    <key>phase</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Swap</name>
+    <key>swap</key>
+    <value>False</value>
+    <type>bool</type>
+    <option>
+        <name>On</name>
+        <key>True</key>
+    </option>
+    <option>
+        <name>Off</name>
+        <key>False</key>
+    </option>
+  </param>
+  <param>
+    <name>Diff</name>
+    <key>diff</key>
+    <value>False</value>
+    <type>bool</type>
+    <option>
+        <name>On</name>
+        <key>True</key>
+    </option>
+    <option>
+        <name>Off</name>
+        <key>False</key>
+    </option>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>

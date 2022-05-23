@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<block>
+  <name>Decimating FIR Filter</name>
+  <key>fastpsk_fir_filter_ssf</key>
+  <category>[fastpsk]</category>
+  <import>import fastpsk</import>
+  <make>fastpsk.fir_filter_ssf($decim, $taps)</make>
+  <param>
+    <name>Decimation</name>
+    <key>decim</key>
+    <value>1</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Taps</name>
+    <key>taps</key>
+    <value>numpy.ones(sps)/sps</value>
+    <type>real_vector</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>sc16</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>sc16</type>
+  </source>
+</block>

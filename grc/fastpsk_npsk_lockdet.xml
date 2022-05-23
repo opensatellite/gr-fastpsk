@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<block>
+  <name>npsk_lockdet</name>
+  <key>fastpsk_npsk_lockdet</key>
+  <category>[fastpsk]</category>
+  <import>import fastpsk</import>
+  <make>fastpsk.npsk_lockdet($n, $npsk, $alpha, $thresh)</make>
+  <param>
+    <name>N</name>
+    <key>n</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>sc16</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <optional>1</optional>
+  </source>
+</block>

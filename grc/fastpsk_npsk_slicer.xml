@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<block>
+  <name>NPSK Slicer</name>
+  <key>fastpsk_npsk_slicer</key>
+  <category>[fastpsk]</category>
+  <import>import fastpsk</import>
+  <make>fastpsk.npsk_slicer($npsk, $gray)</make>
+  <param>
+    <name>NPSK</name>
+    <key>npsk</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Gray</name>
+    <key>gray</key>
+    <value>True</value>
+    <type>bool</type>
+    <option>
+        <name>On</name>
+        <key>True</key>
+    </option>
+    <option>
+        <name>Off</name>
+        <key>False</key>
+    </option>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>sc16</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>

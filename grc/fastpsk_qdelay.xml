@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<block>
+  <name>Q Delay</name>
+  <key>fastpsk_qdelay</key>
+  <category>[fastpsk]</category>
+  <import>import fastpsk</import>
+  <make>fastpsk.qdelay($delay)</make>
+  <param>
+    <name>Delay</name>
+    <key>delay</key>
+    <value>1</value>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>sc16</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>sc16</type>
+  </source>
+</block>

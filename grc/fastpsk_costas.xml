@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<block>
+  <name>Fast Costas Loop</name>
+  <key>fastpsk_costas</key>
+  <category>[fastpsk]</category>
+  <import>import fastpsk</import>
+  <make>fastpsk.costas($n, $order, $loop_bw, $max_deviation)</make>
+  <param>
+    <name>N</name>
+    <key>n</key>
+    <value>16</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Order</name>
+    <key>order</key>
+    <value>2</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Loop BW</name>
+    <key>loop_bw</key>
+    <value>0.03</value>
+    <type>real</type>
+  </param>
+  <param>
+    <name>Max deviation</name>
+    <key>max_deviation</key>
+    <value>math.pi</value>
+    <type>real</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>sc16</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>sc16</type>
+  </source>
+  <source>
+    <name>error</name>
+    <type>float</type>
+    <optional>1</optional>
+  </source>
+</block>
